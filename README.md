@@ -37,7 +37,7 @@ This demo project demonstrates how to load nested data from separate API endpoin
     $ docker run -itd -e POSTGRES_USER=loader -e POSTGRES_PASSWORD=password -p 5432:5432 -v /data:/var/lib/postgresql/data --name postgresql postgres    
     ```
 
-    > Replace the first `/data` with the absolue path to the `/data` directory on your local machine.
+    > Replace the first `/data` with the absolute path to the directory on your local machine that you want to map to `/var/lib/postgresql/data` inside the container.
 
 5. Connect with the database.
 
