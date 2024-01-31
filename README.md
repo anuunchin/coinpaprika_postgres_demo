@@ -34,10 +34,10 @@ This demo project demonstrates how to load nested data from separate API endpoin
 4. Run the Docker container using the postgres:latest image with the below command.
 
     ```bash
-    $ docker run -itd -e POSTGRES_USER=loader -e POSTGRES_PASSWORD=password -p 5432:5432 -v /data:/var/lib/postgresql/data --name postgresql postgres    
+    $ docker run -itd -e POSTGRES_USER=loader -e POSTGRES_PASSWORD=password -p 5432:5432 -v /Users/vasa/Projects/coinpaprika_postgres_demo/data:/var/lib/postgresql/data --name postgresql postgres    
     ```
 
-    > Replace the first `/data` with the absolute path to the directory on your local machine that you want to map to `/var/lib/postgresql/data` inside the container.
+    > Replace `/data` with the absolute path to the directory on your local machine that you want to map to `/var/lib/postgresql/data` inside the container.
 
 5. Connect with the database.
 
@@ -51,18 +51,9 @@ This demo project demonstrates how to load nested data from separate API endpoin
     CREATE DATABASE demo_data;
     ```
 
-7. Enter your credentials into `.dlt/secrets.toml`. 
+7. Your demo credentials are in the .dlt/secrets.toml file. 
 
-    ```env
-    [destination.postgres.credentials]
-
-    database = "demo_data"
-    username = "loader"
-    password = "password" # replace with your password
-    host = "localhost" # or the IP address location of your database
-    port = 5432
-    connect_timeout = 15    
-    ```
+    > You can change them if you want to.
 
 ## Your dlt pipeline
 
