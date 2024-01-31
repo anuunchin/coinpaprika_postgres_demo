@@ -93,4 +93,4 @@ This demo project demonstrates how to load nested data from separate API endpoin
 
 2. View your data. It should look like this. 
 
-    - An image to be added by Anuun.
+    ![DBeaver view of demo_data](https://storage.googleapis.com/dlt-blog-images/belgrade_demo_DBeaver_view.png)
